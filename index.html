@@ -4,10 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CreditCardScan</title>
+<style>
+* {
+  font-size: 18px;
+}
+</style>
 </head>
 <body>
 <form action="./">
-<p><label for="cardNumber">カード番号</label>: <input type="text" name="cardNumber" size="20" maxlength="20"></p>
+<p><label for="cardNumber">カード番号</label>: <input type="tel" name="cardNumber" size="20" maxlength="20" autocomplete="cc-number"></p>
 <p>
   <label for="cardExpirationMonth">有効期限（月）</label>:
   <select name="cardExpirationMonth">
